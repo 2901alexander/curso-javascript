@@ -29,3 +29,55 @@ function perimetroCirculof (radio){
    return diamet * numeroPI;
 
 };
+
+//Aqui interactuamos con el HTML
+       //cuadrado
+            function perimetroCuadrado(lado){
+            return lado * 4;
+            }
+            function areaCuadrado(lado) {
+            return lado * lado;
+            }
+       //triangulo    
+
+            function perimetroTriangulo(lado1, lado2, base) {
+            return lado1 + lado2 + base;
+            }
+  
+            function areaTriangulo(base, altura) {
+            return (base * altura) / 2;
+            }
+//cuadrado
+function calcularPerimetroCuadrado(){
+  const input = document.getElementById("inputCuadrado");
+  const value = input.value;
+
+  const perimetro = perimetroCuadrado(value);
+  alert (perimetro);
+
+}
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);    
+}
+
+//triangulo
+function calcularPerimetroTriangulo(){
+    const lado1 = document.getElementById("lado1").value;
+    const lado2 = document.getElementById("lado2").value;
+    const base = document.getElementById("base").value; 
+
+    const perimetroTrian = perimetroTriangulo( lado1,lado2,base);
+    alert(perimetroTrian);
+}
+function calcularAreaTriangulo(){
+    
+    const altura = document.getElementById("altura").value;
+    const base = document.getElementById("base").value; 
+
+    const areaTrian = (base * altura) / 2;
+    alert(areaTrian);
+}
