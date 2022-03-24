@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras geometricas | Curso Practico de JavaScript en Platzi</title>
+    <style>
+        .cuadrado,
+        .circulo,
+        .triangulo,       
+        .isoceles{
+            width: 250px;
+            height: 70px;
+            background-color: aqua;
+        }
+    </style>
 </head> 
 <body>
     <header>
@@ -25,6 +35,10 @@
                 Calcular area
             </button>
         </form>
+        <div class="cuadrado">
+           <p id="resultadoCuadrado"></p>
+           <p id="resultadoAreaCuadrado"></p>
+        </div>
     </section>
 
     <section>
@@ -51,30 +65,60 @@
             </button>
             <button type="button" onclick="calcularAreaTriangulo()">
                 Calcular area
-            </button>
+            </button>       
         </form>
+        <div class="triangulo">
+        <p id="resultadoTriangulo"></p>
+        <p id="resultadoAreaTriangulo"></p>
+        </div>
+    </section>
+
+
+    <section>
+        <h2>Calcula el area y perimetro de un circulo</h2>
+        <form action="">
+            <label for="radio">
+                Escribe cuanto mide el radio de tu circulo;
+            </label>
+            <input id="radio" type="number" /><br/>
+            
+            <button type="button" id="eventoclick">
+                Calcular el perimetro
+            </button>
+            <button type="button" id="evento2">
+                Calcular area
+            </button>       
+        </form>
+        <div class="circulo">
+        <p id="resultadoCirculo"></p>
+        <p id="resultadoAreaCirculo"></p>
+        </div>
     </section>
 
 
     <section>
         <h2>Calcular altura de triangulo isosceles</h2>
         <form action="">
-            <label for="ladi1">
+            <label for="lad1">
                 Escribe cuanto mide el primer lado de tu triangulo;
             </label>
-            <input id="lado1" type="number" /><br/>
-            <label for="ladi2">
+            <input id="lad1" type="number" /><br/>
+            <label for="lad2">
                 Escribe cuanto mide el segundo lado de tu triangulo;
             </label>
-            <input id="lado2" type="number" /><br/>
-            <label for="base">
+            <input id="lad2" type="number" /><br/>
+            <label for="base1">
                 Escribe cuanto mide la base de tu triangulo;
             </label>
-            <input id="base" type="number" /><br/>
-            <button type="button" onclick="isosceles()">
+            <input id="base1" type="number" /><br/>
+            <button type="button" id="isosceles">
                 Calcular el altura
             </button>
         </form>
+        <div class="isoceles">
+            <p id="resultadoIsoceles"></p>
+        </div>
+        
     </section>
     
     
